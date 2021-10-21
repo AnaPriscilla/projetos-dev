@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Roboto:wght@300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Noto+Sans+Mono:wght@200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Noto Sans Mono', monospace;
+}
+
+:root {
+    --menu: #db9d56;
+    --white: #fff;
+    --orange: #fff;
+    --black: rgb(22, 20, 20);
+}
+
+body {
+    background-color: rgb(240, 240, 240);
+    color: var(--black);
+}
+
+.container {
+    margin: 0 5rem 0 5rem;
+    padding: 3rem 0 3rem 0;
+}
+
+.header {
+    background-color: var(--menu);
+    padding: 1rem 5rem;
+    box-shadow: 0 5px 15px rgb(195, 195, 195);
+}
+
+.header svg {
+
+    fill: var(--orange);
+    width: 15rem;
+}
+
+.logo_pessoal h1 {
+    font-size: 1rem;
+    color: var(--orange);
+    margin-top: -1rem;
+}
+
+.logo_pessoal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header_itens {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.titulo_page {
+    text-align: center;
+    color: var(--orange);
+}
+
+.titulo_page h2 {
+    font-size: 2rem;
+}
+
+.about_me h2 {
+    border: 2px double var(--orange);
+    padding: 1rem;
+    color: var(--orange);
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.about_me h2:hover {
+    background-color: var(--orange);
+    color: var(--menu);
+
+}
+
+
+
+.apresentacao {
+    display: flex;
+    align-items:inherit;
+    border: 2px dashed #dadada;
+    border-radius: 15px;
+    padding: 2rem;
+}
+
+.apresentacao p {
+    margin-left: 1rem;
+    
+}
+
+.box_logica {
+    margin-top: 3rem;
+    width: 30rem;
+    text-align: center;
+}
+
+.box_logica h3 {
+    border-bottom: 3px solid rgb(216, 216, 216);
+    color: var(--menu);
+    text-align: center;
+    padding: .5rem 0;
+    margin-bottom: 1rem;
+    font-size: 2.1rem;
+}
+
+.box_logica ul li {
+    list-style:square;
+    margin-left: 1rem;
+    font-size: .8rem;
+    color: var(--menu);
+}
+
+.box_logica a {
+    text-decoration: none;
+    color: var(--black);
+}
+
+.box_logica a:hover {
+    border-bottom: 10px solid rgb(216, 216, 216);
