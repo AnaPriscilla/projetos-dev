@@ -8,7 +8,7 @@
 }
 
 :root {
-    --menu: #db9d56;
+    --menu: #2f3035;
     --white: #fff;
     --orange: #fff;
     --black: rgb(22, 20, 20);
@@ -31,10 +31,10 @@ body {
 }
 
 .header svg {
-
     fill: var(--orange);
     width: 15rem;
 }
+
 
 .logo_pessoal h1 {
     font-size: 1rem;
@@ -73,11 +73,10 @@ body {
 
 .about_me h2:hover {
     background-color: var(--orange);
+    border: 2px double var(--orange);
     color: var(--menu);
 
 }
-
-
 
 .apresentacao {
     display: flex;
@@ -94,8 +93,7 @@ body {
 
 .box_logica {
     margin-top: 3rem;
-    width: 30rem;
-    text-align: center;
+    width: 32rem;
 }
 
 .box_logica h3 {
@@ -107,11 +105,12 @@ body {
     font-size: 2.1rem;
 }
 
-.box_logica ul li {
-    list-style:square;
-    margin-left: 1rem;
-    font-size: .8rem;
-    color: var(--menu);
+.lista_logica {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    margin-left: 4.5rem;
 }
 
 .box_logica a {
@@ -119,5 +118,24 @@ body {
     color: var(--black);
 }
 
-.box_logica a:hover {
-    border-bottom: 10px solid rgb(216, 216, 216);
+.box_logica li {
+    padding: .3rem 0;
+}
+
+.box_logica li:hover {
+    font-weight: 800;
+    text-decoration: underline;
+    color: rgba(255, 177, 33, 0.87);
+}
+
+.box_title {
+    display: flex;
+    justify-content: center;
+}
+
+.box_title span {
+    width: 25px;
+    height: 60px;
+    background-color: rgba(255, 177, 33, 0.87);
+    margin-right: 1rem;
+}

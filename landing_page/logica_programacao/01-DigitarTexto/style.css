@@ -28,6 +28,27 @@ body {
     margin-top: 10%;
 }
 
+.home {
+    float: right;
+    margin-bottom: 7rem;
+    margin-right: 5rem;
+    margin-top: 2rem;
+    display: flex;
+}
+
+.home h6 {
+    font-size: .85rem;
+}
+
+.home a {
+    text-decoration: none;
+    color: #000;
+}
+
+.home a:hover {
+    color: var(--button);
+}
+
 .box_pergunta {
     text-align: center;
     width: 550px;
@@ -91,7 +112,7 @@ body {
 }
 
 .autora {
-    margin-top: 280px;
+    margin-top: 250px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -106,6 +127,15 @@ body {
     .container,
     .box_pergunta {
         width: 100%;
+    }
+
+    .home {
+        margin-bottom: 3rem;
+        margin-right: 2rem;
+    }
+
+    .home h6 {
+        font-size: .7rem;
     }
 
     .box_pergunta {
