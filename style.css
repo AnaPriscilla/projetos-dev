@@ -77,6 +77,10 @@ body {
 
 }
 
+.about_me a {
+    text-decoration: none;
+}
+
 .apresentacao {
     display: flex;
     align-items:inherit;
@@ -179,6 +183,10 @@ body {
 
 .bi-github {
     font-size: .75rem;
+}
+
+.footer {
+    margin-top: 12rem;
 }
 
 @media (max-width:768px) {
