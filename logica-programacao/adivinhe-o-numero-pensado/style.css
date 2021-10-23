@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@300;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Zen+Kurenaido&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Mukta', sans-serif;
+}
+
+:root {
+    --pattern: rgb(98, 83, 126);
+    --button: rgb(195, 183, 218);
+    --letter: rgb(223, 218, 233);
+    --border: rgb(138, 127, 160);
+}
+
+body {
+    background-image: url('img/minha_logoCinza.svg');
+    background-repeat: repeat;
+    background-color: var(--white);
+    background-size: 15px;
+}
+
+.container{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10%;
+}
+
+.home {
+    float: right;
+    margin-bottom: 7rem;
+    margin-right: 5rem;
+    margin-top: 2rem;
+    display: flex;
+}
+
+.home h6 {
+    font-size: .85rem;
+    color: var(--pattern);
+}
+
+.home a {
+    text-decoration: none;
+    color: #000;
+}
+
+.home a:hover {
+    color: var(--button);
+}
+
+.box_pergunta {
+    text-align: center;
+    width: 400px;
+    height: 150px;
+    padding: 2rem;
+    border: 15px double var(--border);
+    border-radius: 80px 80px 80px 0;
+    background-color: var(--pattern);
+    box-shadow: 0 8px 8px rgb(218, 218, 218);
+}
+
+.box_pergunta h1 {
+    font-family: 'Zen Kurenaido', sans-serif;
+    font-size: 2rem;
+    color: var(--letter);
+}
+
+.bi-gift {
+    font-size: 1.7rem;
+}
+
+.box_pergunta h6 {
+    color: var(--letter);
+    background-color: var(--border);
+    border-radius: 5px;
+    font-size: .8rem;
+}
+
+.form_adivinha {
+    margin-top: 2rem;
+}
+
+.form_adivinha label {
+    color: var(--letter);
+}
+
+.form_adivinha input {
+    width: 20%;
+    height: 2.5rem;
+    padding-left: .5rem;
+    border-radius: 10px 0 0 10px;
+}
+
+.form_adivinha button {
+    width: 45%;
+    background-color: var(--letter);
+    height: 2.7rem;
+    border-radius: 0 10px 10px 0;
+    border: 1px solid var(--letter);
+    color: var(--pattern);
+}
+
+.form_adivinha button:hover {
+    background-color: #fff;
+    color: var(--border);
+    cursor: pointer;
+}
+
+.autora {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--pattern);
+    margin-top: 2rem;
+}
+
+.autora svg {
+    margin: -0.3rem .2rem 0 .2rem;
+    width: 1.5rem;
+    fill: var(--pattern);
+}
+
+@media (max-width:900px) {
+    .container,
+    .box_pergunta {
+        width: 100%;
+    }
+
+    .home {
+        margin-bottom: 3rem;
+        margin-right: 2rem;
+    }
+
+    .home h6 {
+        font-size: .7rem;
+    }
+
+    .box_pergunta h1 {
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+    }
+
+    .box_pergunta {
+        margin: 0 2rem 0 2rem;
+        height: 300px;
+    }
+
+    .form_adivinha {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .form_adivinha label {
+        margin-top: -0.1rem;
+        font-size: 1.3rem;
+    }
+
+    .form_adivinha input {
+        width: 95%;
+        border-radius: 10px;
+        margin-bottom: 0.5rem;
+    }
+    
+    .form_adivinha button {
+        width: 100%;
+        border-radius: 10px;
+    }
+
+    .autora img {
+        width: 18px;
+    }
+
+    .autora {
+        margin-top: 2rem;
+        font-size: 10px;
+    }
+
+}
